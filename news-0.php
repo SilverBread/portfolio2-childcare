@@ -11,7 +11,7 @@
     $db = new PDO($dsn, $user, $password);
     $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     // プリペアドステートメントを作成
-    $stmt = $db->prepare("SELECT * FROM news ORDER BY created DESC");
+    $stmt = $db->prepare("SELECT * FROM news WHERE child_class='0歳児クラス' ORDER BY created DESC");
     // クエリの実行
     $stmt->execute();
   } catch (PDOException $e){
@@ -72,7 +72,7 @@
     <main>
     <div class="List">
       <table>
-        <caption>引き継ぎ内容【全体】</caption>
+        <caption>引き継ぎ内容【0歳児クラス】</caption>
           <thead>
             <tr>
               <th></th>
