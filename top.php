@@ -24,9 +24,9 @@ session_write_close();
         <nav>
           <ul class="global-nav">
             <li><a href="top.php">ホーム</a></li>
-            <li><a href="news.php">引き継ぎ</a></li>
-            <li><a href="buy.php">必要なもの</a></li>
-            <li><a href="posts.php">投稿</a></li>
+            <li><a href="news/news.php">引き継ぎ</a></li>
+            <li><a href="buy/buy.php">必要なもの</a></li>
+            <li><a href="posts/posts.php">投稿</a></li>
             <!-- ログアウトボタン -->
             <li>
               <form action="logout.php" method="POST">
@@ -44,9 +44,9 @@ session_write_close();
         <nav class="nav">
           <ul class="nav-list">
             <li><a href="top.php">ホーム</a></li>
-            <li><a href="news.php">引き継ぎ</a></li>
-            <li><a href="buy.php">必要なもの</a></li>
-            <li><a href="posts.php">投稿</a></li>
+            <li><a href="news/news.php">引き継ぎ</a></li>
+            <li><a href="buy/buy.php">必要なもの</a></li>
+            <li><a href="posts/posts.php">投稿</a></li>
             <!-- ログアウトボタン -->
             <li>
               <form action="logout.php" method="POST">
