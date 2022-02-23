@@ -12,10 +12,10 @@
       <div class="normal">
         <nav>
           <ul class="global-nav">
-            <li><a href="top.php">ホーム</a></li>
+            <li><a href="../top.php">ホーム</a></li>
             <li><a href="news.php">引き継ぎ</a></li>
-            <li><a href="buy.php">必要なもの</a></li>
-            <li><a href="posts.php">投稿</a></li>
+            <li><a href="../buy/buy.php">必要なもの</a></li>
+            <li><a href="../posts/posts.php">投稿</a></li>
             <!-- ログアウトボタン -->
             <li>
               <form action="logout.php" method="POST">
@@ -32,13 +32,13 @@
           </label>
         <nav class="nav">
           <ul class="nav-list">
-            <li><a href="top.php">ホーム</a></li>
+            <li><a href="../top.php">ホーム</a></li>
             <li><a href="news.php">引き継ぎ</a></li>
-            <li><a href="buy.php">必要なもの</a></li>
-            <li><a href="posts.php">投稿</a></li>
+            <li><a href="../buy/buy.php">必要なもの</a></li>
+            <li><a href="../posts/posts.php">投稿</a></li>
             <!-- ログアウトボタン -->
             <li>
-              <form action="logout.php" method="POST">
+              <form action="../logout.php" method="POST">
                 <input type="submit" name="logout" class="Logout-Btn" value="ログアウト">
               </form>
             </li>
