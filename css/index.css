@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
+
+
+body{
+  margin: 0; /*画面いっぱい広げる*/
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-image: url(../img/home.jpg);
+  background-position: center top;
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+h1{
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+  font-size: 70px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+h2{
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 33px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+/*ログインボタン 通常時*/
+.login{
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #293B4E;
+  background-color: #293B4E;
+  padding: 10px 0;
+  margin: 230px auto 0;
+  transition: background-color 0.5s ease 0s; /*アニメーション*/
+  }
+/*マウスオーバー時*/
+.login:hover{
+  background-color: transparent;
+  color: #293B4E;
+}
