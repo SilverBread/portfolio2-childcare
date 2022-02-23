@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+JP:wght@100&display=swap');
+
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #d1d1f1;
+}
+
+/* ヘッダー　1130以上 */
+@media screen and (min-width: 1130px) {
+  header{
+    margin: 0 auto;
+    background-color: rgba(47, 49, 49, 0.6);
+    width: 100%;
+    height: 10vh;
+  }
+  .normal{
+    display: flex;
+    justify-content: center; /*中央寄せ*/
+  }
+  .global-nav li{
+    list-style: none;
+    float: left;
+    font-size: 25px;
+    margin: 12px 60px;
+  }
+  .global-nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  /*ログアウトボタン 通常時*/
+  .global-nav .Logout-Btn{
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    font-size: 16px;
+    color: #343a40;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #ddd;
+    background-color: #fff;
+    transition: background-color 0.5s ease 0s; /*アニメーション*/
+  }
+  /*マウスオーバー時*/
+  .global-nav .Logout-Btn:hover{
+    background-color: rgb(243, 223, 178); /*transparent;*/
+    color: #293B4E;
+  }
+  /* ハンバーガーメニューを非表示 */
+  .drawer{
+    display: none;
+  }
+}
+
+/* ヘッダー1130未満 */
+@media screen and (max-width: 1130px) {
+  /*normal非表示*/
+  .normal{
+    display: none;
+  }
+  /* ハンバーガーメニューを表示 */
+  .drawer{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
+  }
+  /* ハンバーガーアイコン */
+  .btn-burger {
+    cursor: pointer;
+    display: block;
+    width: 56px;
+    height: 60px;
+    position: absolute;
+    top: 3px;
+    right: 4px;
+  }
+  /* ハンバーガーアイコンを作る三本線 */
+  .icon, .icon:before, .icon:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* 線の太さ */
+    width: 35px; /* 線の長さ */
+    background-color: #fff;
+    border-radius: 2px;
+    display: block;
+    content: '';
+    cursor: pointer;
+    margin: auto;
+  }
+  /* 三本線の間隔 */
+  .icon:before {
+    top: 20px;
+  }
+  .icon:after {
+    top: -20px;
+  }
+  /* チェックボックス非表示 */
+  .nav-toggle {
+    display: none;
+  }
+  /* アイコンをクリックしたら */
+  .nav-toggle:checked ~ .btn-burger .icon {
+    background: transparent;
+  }
+  .nav-toggle:checked ~ .btn-burger .icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .nav-toggle:checked ~ .btn-burger .icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .icon,
+  .icon:before,
+  .icon:after {
+    transition: all .8s;
+  }
+  /* 表示されるメニューの中身 */
+  .nav {
+    background-color: rgba(0, 0, 0, .6);
+    width: 260px;
+    top: 60px;
+    right: 0;
+    position: absolute; 
+  }
+  .nav-list {
+    display: none;
+    padding: auto;
+    margin: auto;
+    width: 170px;
+    height: 360px;
+  }
+  .nav-list li {
+    list-style: none;
+    margin: 40px auto;
+    padding: auto;
+    font-size: 22px;
+  }
+  .nav-list a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+  }
+  /*ログアウトボタン*/
+  .nav-list .Logout-Btn{
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    font-size: 16px;
+    color: #343a40;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #ddd;
+    background-color: #fff;
+  }
+  .nav-toggle:checked ~ .nav .nav-list {
+    display: block;
+  }
+}
+
+/* メイン */
+main{
+  margin: 0;
+}
+.List{
+  text-align: center;
+}
+table{
+  border-spacing: 0;
+  overflow-x: auto; /*左右の境界からあふれた時どのように表示するか*/
+  width: 100%;
+  margin: auto;
+}
+caption{
+  font-size: 35px;
+  margin: 40px auto 40px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1130px) {
+  caption{
+    font-size: 30px;
+    margin: 20px auto 30px;
+  }
+}
+thead{
+  display: table-header-group; /*theadのような表示にする*/
+  vertical-align: middle; /*縦方向の揃え位置:中央揃え*/
+  border-color: inherit;
+}
+tbody{
+  display: table-row-group; /*tbodyのような表示にする*/
+  vertical-align: middle; /*縦方向の揃え位置:中央揃え*/
+  border-color: inherit;
+  width: 100%;
+}
+tr{
+  display: table-row; /*tr要素のような表示にする*/
+  vertical-align: inherit; /*縦方向の揃え位置:継承*/
+}
+th, td {
+  border-bottom: 1px solid rgb(89, 89, 90);
+  padding: 30px 10px;
+  font-weight: normal;
+}
+th{
+  display: table-cell; /*td要素のような表示にする*/
+  vertical-align: inherit; /*縦方向の揃え位置:継承*/
+  font-size: 20px;
+}
+@media screen and (max-width: 1130px) {
+  th{
+    font-size: 16px;
+  }
+}
+td{
+  font-size: 17px;
+}
+@media screen and (max-width: 1130px) {
+  td{
+    font-size: 14px;
+  }
+}
+.check{
+  height: 20px;
+  width: 20px;
+}
+/*削除ボタン*/
+.Delete-Btn{
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  font-size: 13px;
+  color: #FFF;
+  border: 3px solid #293B4E;
+  background-color: #293B4E;
+}
