@@ -58,7 +58,7 @@ session_destroy();
     <!-- ヘッダー -->
     <header>
       <div class="Btn">
-        <a class="Btn-Back" href="index.php">back</a>
+        <a class="Btn-Back" href="index.html">back</a>
       </div>
     </header>
 
