@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+main{
+  text-align: center;
+  margin-top: 0;
+}
+h2{
+  font-size: 25px;
+  font-family: Impact;
+  margin: 6vh auto;
+}
+.Btn{
+  display:flex;
+  justify-content:center;
+}
+.Back-Btn, .Delete-Btn{
+  margin: 20px;
+}
