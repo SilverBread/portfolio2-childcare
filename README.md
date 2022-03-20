@@ -9,9 +9,9 @@ HTML , CSS  , PHP を使用して、社内コミュニケーションツール�
 ・投稿一覧表示機能<br>
 ・投稿削除機能<br>
 
-!{width:200px}./uploads/readme1-top.png!
+!{width:200px}!(./uploads/readme1-top.png)
 
-!{width:100px}[uploads](./uploads/readme1-top.png)
+!{width:100px}![uploads](./uploads/readme1-top.png)
 
 ## usage
 __【ログイン機能】__<br>
