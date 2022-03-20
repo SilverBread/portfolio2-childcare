@@ -11,8 +11,8 @@ HTML , CSS  , PHP を使用して、社内コミュニケーションツール�
 
 <img src="./uploads/readme1-top.png" width="40%" height="50px"><img src="./uploads/readme2-login.png" width="40%">
 <img src="./uploads/readme3-mypage.png" width="40%"><img src="./uploads/readme4-news.png" width="40%">
-<img src="./uploads/readme5-news_all.png" width="40%"><img src="./uploads/readme6_buy.png" width="40%">
-<img src="./uploads/readme7-buy_all.png" width="40%"><img src="./uploads/readme8-posts.png" width="40%">
+<img src="./uploads/readme5-news_all.png" width="40%"><img src="./uploads/readme6-buy.png" width="40%">
+<img src="./uploads/readme7-buy_all.png" width="40%"><img src="./uploads/readme8_posts.png" width="40%">
 <img src="./uploads/readme9-posts_news.png" width="40%"><img src="./uploads/readme10-posts_buy.png" width="40%">
 
 
