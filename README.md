@@ -12,7 +12,7 @@ HTML , CSS  , PHP を使用して、タスク管理アプリを作成しまし�
 ![uploads](./uploads/readme-.png)
 
 ## usage
-【ログイン機能】<br>
+__【ログイン機能】__<br>
 ・
 <br>
 【ログアウト機能】<br>
