@@ -1,4 +1,4 @@
-# portfolio2-childcare
+# Sample保育園 -職員連絡サイト-
 HTML , CSS  , PHP を使用して、社内コミュニケーションツールを作成しました。<br>
 <br>
 実装した主な機能は以下の通りです。<br>
