@@ -11,7 +11,7 @@ HTML , CSS  , PHP を使用して、社内コミュニケーションツール�
 
 !{width:200px}readme1-top.png!
 
-![uploads](./uploads/readme-.png)
+!{width:100px}[uploads](./uploads/readme1-top.png)
 
 ## usage
 __【ログイン機能】__<br>
